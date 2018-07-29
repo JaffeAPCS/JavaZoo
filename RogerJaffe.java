@@ -7,10 +7,6 @@
  */
 public class RogerJaffe extends Animal
 {
-  public RogerJaffe() {
-    super("Roger Jaffe", "red", 0);
-  }
-  
   public String getType() {
     return "BoopleSnoot";
   }

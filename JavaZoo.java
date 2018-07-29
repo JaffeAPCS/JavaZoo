@@ -16,8 +16,8 @@ public class JavaZoo
     
     try {
       for (int i=0; i<animalList.length; i++) {
-        Object a = Class.forName(animalList[i]).newInstance();
-        System.out.println("Animal #"+(i+1)+" by "+((Animal)a).getStudentName());
+        Animal a = new RogerJaffe();
+        System.out.println("Animal #"+(i+1)+" by "+a.getClassName());
         System.out.println(a.toString());
         System.out.println();
       }

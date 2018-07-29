@@ -3,74 +3,31 @@
  * Abstract class Animal
  * 
  * @author Mr. Jaffe
- * @version 1.0 2017-07-13
+ * @version 1.1 2018-07-29
  */
 public abstract class Animal
 {
-  // instance variables - replace the example below with your own
-  private String color;
-  private int legs;
-  private String studentName;
-
-  /**
-   * Constructor
-   */
-  public Animal()
-  {
-    this("Unknown student", "Colorless", 4); // Default is a black animal with 4 legs
-  }
-  
-  /**
-   * Overloaded constructor that sets color and # of legs
-   * 
-   * @param color Initial color
-   * @param legs Initial # of legs
-   */
-  public Animal(String studentName, String color, int legs) {
-    this.studentName = studentName;
-    this.color = color;
-    this.legs = legs;
-  }
-  
   /**
    * Getter for color
    */
   public String getColor() {
-    return this.color;
+    return "Abstract color";
   }
   
-  /** 
-   * Setter for color
-   * 
-   * @param color New color
-   */
-  public void setColor(String color) {
-    this.color = color;
-  }
-
   /**
    * Getter for legs
    */
   public int getLegs() {
-    return this.legs;
+    return 0;
   }
   
   /** 
-   * Setter for legs
+   * Getter for className
    * 
-   * @param legs New number of legs
+   * @return the class name
    */
-  public void setLegs(int legs) {
-    this.legs = legs;
-  }
-  
-  /** 
-   * Getter for studentName
-   * 
-   * @return The student name
-   */
-  public String getStudentName() {
-    return this.studentName;
+  public String getClassName() {
+    return this.getClass().getSimpleName();
   }
   
   /**
@@ -78,7 +35,7 @@ public abstract class Animal
    * method or default speak will generate "Yaba-daba-doo"
    */
   public String speak() {
-    return "Yaba-daba-doo";
+    return "Yaba-daba-doo [default]";
   }
   
   /**
@@ -89,7 +46,7 @@ public abstract class Animal
    * @return Disposition
    */
   public String getDisposition() {
-    return "meh";
+    return "meh [default]";
   }
   
   /**
