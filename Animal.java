@@ -8,6 +8,15 @@
 public abstract class Animal
 {
   /**
+   * This will return the type of animal (i.e. "Dog", "Cat", etc)
+   * 
+   * @return The type of the animal
+   */
+  public String getType() {
+    return "Abstract animal";
+  }
+  
+  /**
    * Getter for color
    */
   public String getColor() {
@@ -19,15 +28,6 @@ public abstract class Animal
    */
   public int getLegs() {
     return 0;
-  }
-  
-  /** 
-   * Getter for className
-   * 
-   * @return the class name
-   */
-  public String getClassName() {
-    return this.getClass().getSimpleName();
   }
   
   /**
@@ -48,17 +48,7 @@ public abstract class Animal
   public String getDisposition() {
     return "meh [default]";
   }
-  
-  /**
-   * This will return the type of animal (i.e. "Dog", "Cat", etc)
-   * 
-   * @return The type of the animal
-   */
-  public String getType() {
-    return "Abstract animal";
-  }
-  
-  
+    
   /**
    * This will return the animal's name. What's the default name?
    * 
@@ -82,4 +72,13 @@ public abstract class Animal
     return buffer.toString();
   }
 
+  /** 
+   * Getter for className
+   * 
+   * @return the class name
+   */
+  public String getClassName() {
+    return this.getClass().getSimpleName();
+  }
+  
 }
