@@ -13,14 +13,14 @@ public abstract class Animal
    * @return The type of the animal
    */
   public String getType() {
-    return "Abstract animal";
+    return "*** Abstract animal ***";
   }
   
   /**
    * Getter for color
    */
   public String getColor() {
-    return "Abstract color";
+    return "*** Abstract color ***";
   }
   
   /**
@@ -35,7 +35,7 @@ public abstract class Animal
    * method or default speak will generate "Yaba-daba-doo"
    */
   public String speak() {
-    return "Yaba-daba-doo [default]";
+    return "*** Yaba-daba-doo [default] ***";
   }
   
   /**
@@ -46,7 +46,7 @@ public abstract class Animal
    * @return Disposition
    */
   public String getDisposition() {
-    return "meh [default]";
+    return "*** meh [default] ***";
   }
     
   /**
@@ -55,7 +55,7 @@ public abstract class Animal
    * @return The name of the animal (i.e. "Fido", "Rover")
    */
   public String getName() {
-    return "No name defined - bummer";
+    return "*** No name defined - bummer ***";
   }
   
   /**
